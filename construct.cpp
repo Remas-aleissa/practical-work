@@ -4,9 +4,9 @@ class Point{
 double x;
 double y;
 public:
-Point() { x = 0; y = 0;} //Default constructor
-Point (double X , double Y) {x = X; y = Y;} //parameterize constructor
-Point (const Point& rtu) { x = rtu.x; y = rtu.y;} //copy constructor
+Point() { x = 0; y = 0; cout<<"Default Called"<<endl;} 
+Point (double X , double Y) {x = X; y = Y; cout<<"Parameterize Called"<<endl;} 
+Point (const Point& rtu) { x = rtu.x; y = rtu.y; cout<<"Copy Called"<<endl;} 
 };
 
 int main(){
