@@ -12,7 +12,7 @@ Person(){ //We are creating consructor by our own but, if we are not providing a
     name = "Null";
     age = 0;
     height = 0.0f;
-} // we can leave the body blank or initialize Member variables with some know values
+} // we can leave the body blank or initialize Member variables with some known values
 void getData(){
     cout<< endl << "Name:" <<name;
     cout<< endl << "Age:" <<age;
