@@ -4,9 +4,9 @@ class Point{
 double x;
 double y;
 public:
-Point() { x = 0; y = 0;}
-Point (double X , double Y) {x = X; y = Y;}
-Point (const Point& rtu) { x = rtu.x; y = rtu.y;}
+Point() { x = 0; y = 0;} //Default constructor
+Point (double X , double Y) {x = X; y = Y;} //parameterize constructor
+Point (const Point& rtu) { x = rtu.x; y = rtu.y;} //copy constructor
 };
 
 int main(){
