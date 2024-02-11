@@ -1,17 +1,26 @@
 #include<iostream>
+#include<string.h>
 using namespace std;
-class Point{
-double x;
-double y;
-public:
-Point() { x = 0; y = 0; cout<<"Default Called"<<endl;} 
-Point (double X , double Y) {x = X; y = Y; cout<<"Parameterize Called"<<endl;} 
-Point (const Point& rtu) { x = rtu.x; y = rtu.y; cout<<"Copy Called"<<endl;} 
-};
 
+class Person{
+private:
+string name;
+int age;
+float height;
+public:
+Person(){ //We are creating consructor by our own but, if we are not providing any constructor the compiler will include its own constructor that is default:
+    name = "Null";
+    age = 0;
+    height = 0.0f;
+} // we can leave the body blank or initialize Member variables with some know values
+void getData(){
+    cout<< endl << "Name:" <<name;
+    cout<< endl << "Age:" <<age;
+    cout<< endl << "Height:" <<age;
+}
+};
 int main(){
-Point p1;
-Point p2(1.3,3.4);
-Point p3 = p1;
-return 0;
+    Person obj; 
+    obj.getData(); //When we don't pass values with object then , DEFAULT constructor is called:
+    return 0;
 }
