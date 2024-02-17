@@ -1,4 +1,4 @@
-#include <iostream>سسسسس
+#include <iostream>
 using namespace std;
 
 class Rectangle{
